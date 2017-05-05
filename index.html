@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Est-ce qu'on est bientôt vendredi ?</title>
+  </head>
+  <body>
+    <center><h1 id="msg"></h1></center>
+    <script>
+      window.onload = function(){
+      var today = new Date().getDay();
+      var msg_id = document.getElementById("msg");
+      var msg_list = [
+        "Reviens la semaine prochaine.",
+        "Si t'es ici, tu commences mal la semaine...",
+        "Non.",
+        "Presque.",
+        "Bientôt.",
+        "On est vendredi, tout est permis.",
+        "Raté, c'était hier."
+      ];
+
+      msg_id.innerHTML = msg_list[today];
+      };
+    </script>
+  <body>
+</html>
